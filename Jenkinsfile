@@ -1,8 +1,8 @@
 application = "hello-nodejs"
 project = "vchari-sandbox"
 
-openshiftApiURL = "https://api.starter-us-west-2.openshift.com"
-openshiftAuthToken = null
+openshiftApiURL = "https://api.ocppilot.ocpcontainer.com:6443"
+openshiftAuthToken = 8B2VqBJhyP99H0TXBmXAQhBtkGRs0uLqBRGwKKJT5Bk
 
 contextDir = "/"
 gitBranch = "master"
