@@ -1,8 +1,8 @@
 application = "hello-nodejs"
 project = "vchari-sandbox"
 
-openshiftApiURL = "https://api.ocppilot.ocpcontainer.com:6443"
-openshiftAuthToken = 8B2VqBJhyP99H0TXBmXAQhBtkGRs0uLqBRGwKKJT5Bk
+//openshiftApiURL = "https://api.ocppilot.ocpcontainer.com:6443"
+//openshiftAuthToken = 8B2VqBJhyP99H0TXBmXAQhBtkGRs0uLqBRGwKKJT5Bk
 
 contextDir = "/"
 gitBranch = "master"
@@ -16,7 +16,7 @@ node('nodejs'){
     
     sh """
         set +x
-        oc login --token=${openshiftAuthToken} ${openshiftApiURL} >/dev/null 2>&1 || echo 'OpenShift login failed'
+        oc login --token=8B2VqBJhyP99H0TXBmXAQhBtkGRs0uLqBRGwKKJT5Bk --server=https://api.ocppilot.ocpcontainer.com:6443 >/dev/null 2>&1 || echo 'OpenShift login failed'
     """
     
     //git changelog: false, poll: false, url: 'https://github.com/vidhyachari/openshift-hello-nodejs'
